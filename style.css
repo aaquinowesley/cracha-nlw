@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, 
+body{
+  height: 100%;
+  font-family: sans-serif;
+
+  --black: hsl(240, 6% ,13%);
+  --grey: hsl(240,9%, 89%);
+}
+
+body{
+    display: grid;
+    place-items: center;
+}
+
+main{
+    background: url(../img/background.svg) no-repeat center/cover;
+    width: 100vw;
+    min-height: 812px;
+    height: 100vh;
+}
+
+.container {
+    max-width: 250px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    color: var(--grey);
+}
+
+.avatar {
+    width: 10rem;
+    margin:11.5rem auto 0;
+    position: relative;
+}
+
+
+.avatar span{
+    position: absolute;
+    top: -15px;
+    z-index: 1;
+}
+
+.avatar > img {
+    width: 10rem;
+    height: 11.5rem;
+    object-fit: cover;
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+
+.avatar > img:hover {
+    transform: scale(1.11);
+    transition: 0.2s;
+}
+  
+.avatar span {
+    -webkit-animation: spin 4s linear infinite;
+    -moz-animation: spin 4s linear infinite;
+    animation: spin 4s linear infinite;
+}
+
+  @-moz-keyframes spin {
+    100% {
+      -moz-transform: rotate(360deg);
+    }
+}
+  @-webkit-keyframes spin {
+    100% {
+      -webkit-transform: rotate(360deg);
+    }
+}
+  @keyframes spin {
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+
+  margin: 1.5rem 0 0 0;
+}
+
+.github {
+  margin: 0.25rem 0 0 0;
+  text-decoration: none;
+  font-weight: 400;
+  color: var(--gray);
+
+  display: flex;
+  gap: 0.75rem;
+
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s;
+}
+
+.github:hover {
+  transition: 0.2s;
+  filter: brightness(0.5);
+}
+
+
+a {
+    color: var(--grey);
+    text-decoration: none;
+  
+    margin-top: 0.25rem;
+  
+    display: flex;
+    gap: 0.75rem;
+  
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    margin: 2rem;
+    font-weight: 400;
+}
+
+ul  {
+  margin-top: 4rem;
+
+  list-style: none;
+  padding: 0;
+
+  display: flex;
+  gap: 0.4rem;
+  
+  justify-content: center;
+}
+
+li:hover{
+    background: linear-gradient(to right, #167FC9, #2B33B2);
+}
+
+/*Responsivo*/
+
+@media (min-width: 960px) {
+  /* estilos versão desktop */
+
+  html {
+    background: linear-gradient(179deg, #3c68c7, #251abb, #0064fa, #000000);
+    background-size: 800% 800%;
+
+    -webkit-animation: AnimationName 10s ease infinite;
+    -moz-animation: AnimationName 10s ease infinite;
+    animation: AnimationName 10s ease infinite;
+  }
+
+  @-webkit-keyframes AnimationName {
+    0% {
+      background-position: 49% 0%;
+    }
+    50% {
+      background-position: 52% 100%;
+    }
+    100% {
+      background-position: 49% 0%;
+    }
+
+}
+
+  @-moz-keyframes AnimationName {
+    0% {
+      background-position: 49% 0%;
+    }
+    50% {
+      background-position: 52% 100%;
+    }
+    100% {
+      background-position: 49% 0%;
+    }
+}
+
+  @keyframes AnimationName {
+    0% {
+      background-position: 49% 0%;
+    }
+    50% {
+      background-position: 52% 100%;
+    }
+    100% {
+      background-position: 49% 0%;
+    }
+}
+
+  body {
+    background: url(../img/desktop.png) no-repeat center/cover;
+}
+
+.avatar > img {
+  height: 150px;
+  object-fit: cover;
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+
+ul {
+    margin-top: -1rem;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+ul > li > a > img{
+  width: 3rem;
+
+}
+
+main {
+    transform: translateY(-1.3rem); 
+    display: flex;
+    background: none;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100%;
+  }
+}
