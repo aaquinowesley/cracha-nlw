@@ -3,7 +3,7 @@
 
 <p align="center"> Cracha exclusivo para uso na DoWhile 2021, criado na NLW Heat da RocketSeat.</p>
 
-<p align='center'> → Veja como ficou o projeto <a href='https://aaquinowesley.github.io/cracha-nlw/'> aqui </a> ← </p>
+<!-- <p align='center'> → Veja como ficou o projeto <a href='https://aaquinowesley.github.io/cracha-nlw/'> aqui </a> ← </p> -->
 
 <div align='center'>
   <div>
